@@ -14,6 +14,3 @@ def binary_search(values, item):
     else:
         print(f"{values[right_point:mid_point]} {values[mid_point]} {values[mid_point+1:left_point]}")
         return True
-test_list = [0, 1, 2, 8, 13, 17, 19, 32, 42]
-print(binary_search(test_list, 3))
-print(binary_search(test_list, 13))
