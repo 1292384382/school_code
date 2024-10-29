@@ -1,3 +1,4 @@
+import test
 #https://www.runoob.com/w3cnote/selection-sort.html
 '''
 首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置。
@@ -12,4 +13,4 @@ def selectionSort(arr):
                 min_index=k#找到数组中最小数的那个索引
         arr[i],arr[min_index]=arr[min_index],arr[i]#外层的i不止作为计数器，也作为最小数位置标志，将最小数放进最小数位置里
     return arr
-print(selectionSort([3,2,4,5,63,5,7,6565,767,34242,66878,222,1,1]))
+selectionSort(test.list1)

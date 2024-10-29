@@ -1,6 +1,5 @@
 #https://www.runoob.com/w3cnote/insertion-sort.html
-import time
-import random
+import test
 def insert_sorted(arr):
     for i in range(len(arr)):#最低期望是n次结束
         preindex=i-1
@@ -10,8 +9,4 @@ def insert_sorted(arr):
             preindex-=1#前一位继续进行比较，如果下一位不比current大，循环结束，但是index依然会减一，所以最后preindex要加一
         arr[preindex+1]=current#插入current
     return arr
-list1=[]
-for i in range(100000000):
-    list1+=[i]
-random.shuffle(list1)
-print(insert_sorted(list1))
+insert_sorted(test.list1)

@@ -1,3 +1,4 @@
+import test
 def shift(arr,current,index,current_index):#如果我需要替换多个数，我需要写出shift函数来批量替换
     new_list=arr[:index]+[current]+arr[index:current_index]+arr[current_index+1:]#右移数组
     arr[:]=new_list#深拷贝
@@ -33,3 +34,4 @@ while j >= high + 1:
             j -= 1
             后移也用这个
 '''
+half_insert_sorted(test.list1)
