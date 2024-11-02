@@ -23,3 +23,4 @@ def is_palindrome(sentence,firstcall=True):
 
 
 
+#太复杂，指针方便
